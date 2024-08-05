@@ -146,6 +146,7 @@ const colors = [
     '#FFFFE0',
     '#FFFFF0',
     '#FFFFFF',
+    'fuckyou',
 ];
 
 const btn = document.querySelector('.btn');
@@ -154,5 +155,9 @@ const color = document.querySelector('.color');
 btn.addEventListener('click', () => {
     const randomNumber = Math.floor(Math.random() * colors.length);
     color.textContent = colors[randomNumber];
+    if (colors[randomNumber] === 'fuckyou') {
+        document.body.style.backgroundImage =
+            'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC3UJ8zS_fSGsLece7rzGkCTx58Oe6pNn2-w&s)';
+    }
     document.body.style.backgroundColor = colors[randomNumber];
 });
