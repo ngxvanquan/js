@@ -7,11 +7,11 @@ btn.addEventListener('click', () => {
 
 const randomPassword = () => {
     const length = 16;
-    const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@!#$%&*^';
     let result = '';
 
     for (let i = 0; i <= length; i++) {
-        result += charset.charAt(Math.floor(Math.random() * length));
+        result += charset.charAt(Math.floor(Math.random() * charset.length));
     }
 
     return result;
