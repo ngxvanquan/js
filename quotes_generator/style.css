@@ -4,9 +4,13 @@ body {
     align-items: center;
 }
 
+.quotes-container {
+    width: 80%;
+    height: 250px;
+    background: gray;
+}
+
 .block-quote {
     padding: 20px;
-    width: 70%;
-    height: 200px;
-    background-color: gray;
+    display: inline-block;
 }
