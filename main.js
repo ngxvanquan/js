@@ -1,2 +1,1 @@
-let testArray = ['car', 'bike', 'scooter'];
-console.log(testArray.length);
+console.log('hello world')

@@ -28,3 +28,4 @@ btn.addEventListener('click', function () {
     author.style.marginLeft = `${quoteWidth - 100}px`;
     author.textContent = `-${quotes[randomNumber].quoteAuthor}`;
 });
+
